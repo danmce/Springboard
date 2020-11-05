@@ -1,38 +1,38 @@
-const path = require('path')
+const path = require("path")
 
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: ["./src/index.js"],
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js',
-    publicPath: '/'
+    path: path.resolve(__dirname, "build"),
+    filename: "bundle.js",
+    publicPath: "/",
   },
   resolve: {
-    modules: [__dirname, 'node_modules'],
-    extensions: ['*', '.js', '.jsx'],
+    modules: [__dirname, "node_modules"],
+    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
     alias: {
-      components: path.resolve(__dirname, 'src/components'),
-      styles: path.resolve(__dirname, 'src/styles')
-    }
+      components: path.resolve(__dirname, "src/components"),
+      styles: path.resolve(__dirname, "src/styles"),
+    },
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   module: {
     rules: [
       {
         test: /\.svg$/,
         exclude: /node_modules/,
-        loader: 'svg-react-loader'
+        loader: "svg-react-loader",
       },
       {
-        loader: 'babel-loader',
-        test: /\.js$/,
-        exclude: /node_modules/
+        loader: "babel-loader",
+        test: /\.(tsx|ts|js)?$/,
+        exclude: /node_modules/,
       },
       {
-        enforce: 'pre',
+        enforce: "pre",
         test: /\.js$/,
-        loader: 'source-map-loader'
-      }
-    ]
-  }
+        loader: "source-map-loader",
+      },
+    ],
+  },
 }

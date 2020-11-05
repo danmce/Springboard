@@ -2,14 +2,14 @@ module.exports = {
   components: {
     categories: [
       {
-        name: 'General',
+        name: "General",
         include: [
-          'src/components/Badge/Badge.js',
-          'src/components/Button/Button.js',
-          'src/components/TitleText/TitleText.js'
-        ]
-      }
-    ]
+          "src/components/Badge/Badge.js",
+          "src/components/Button/Button.tsx",
+          "src/components/TitleText/TitleText.js",
+        ],
+      },
+    ],
   },
-  name: 'React Base Components'
+  name: "Springboard",
 }

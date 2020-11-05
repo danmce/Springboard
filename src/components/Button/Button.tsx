@@ -28,9 +28,15 @@
 
 // export { Button as default }
 
-import React from 'react';
-import { Button as libButton } from 'rebass';
+import * as React from "react"
+import { Button as RebassButton, ButtonProps } from "rebass"
 
-const Button = (props) => <libButton>Button</libButton>;
+export interface Props {
+  variant?: "primary" | "secondary"
+  children?: string
+}
 
-export { Button as default };
+export default function Button({ variant = "primary", children }: Props): JSX.Element {
+  const props: Props = { variant }
+  return <RebassButton {...props}>{children}</RebassButton>
+}
