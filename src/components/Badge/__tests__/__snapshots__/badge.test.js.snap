@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders error Badge correctly: enzyme.mount 1`] = `
+.emotion-0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #b0bec5;
+  border-radius: 50px;
+  color: #1a1818;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  height: 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 0 16px;
+  width: auto;
+}
+
+<UXPinWrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "borders": Object {
+          "default": "1 solid",
+          "radii": Object {
+            "m": 3,
+            "s": 0,
+          },
+        },
+        "colors": Object {
+          "button": Object {
+            "primary": Object {
+              "background": "#17384B",
+              "border": "#2C546C",
+              "color": "#FFFFFF",
+            },
+            "secondary": Object {
+              "background": "transparent",
+              "border": "#E9EEF2",
+              "color": "#D7DFE2",
+            },
+          },
+          "common": Object {
+            "black": "#000000",
+            "white": "#FFFFFF",
+          },
+          "error": Object {
+            "contrast": "#FFFFFF",
+            "fill": undefined,
+          },
+          "success": Object {
+            "contrast": "#FFFFFF",
+            "fill": undefined,
+          },
+          "warning": Object {
+            "contrast": "#FFFFFF",
+            "fill": undefined,
+          },
+        },
+        "typography": Object {
+          "family": "'Helvetica Neue', sans-serif",
+          "size": Object {
+            "l": 16,
+            "m": 12,
+            "s": 10,
+            "xl": 20,
+            "xs": 8,
+            "xxl": 24,
+            "xxxl": 34,
+            "xxxxl": 50,
+          },
+          "weight": Object {
+            "bold": 600,
+            "light": 100,
+            "regular": 300,
+          },
+        },
+      }
+    }
+  >
+    <Badge
+      text="Test"
+    >
+      <BadgeStyles>
+        <div
+          className="emotion-0 emotion-1"
+        >
+          Test
+        </div>
+      </BadgeStyles>
+    </Badge>
+  </ThemeProvider>
+</UXPinWrapper>
+`;

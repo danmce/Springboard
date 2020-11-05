@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders error Button correctly: enzyme.mount 1`] = `
+.emotion-0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #B31612;
+  border: 1 solid #B31612;
+  border-radius: 3px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 8px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  padding: 1rem 2rem;
+  width: auto;
+}
+
+.emotion-0:hover {
+  background-color: rgb(143,18,14);
+  border: 1 solid rgb(143,18,14);
+}
+
+<UXPinWrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "borders": Object {
+          "radii": Object {
+            "m": 3,
+            "s": 0,
+          },
+          "size": Object {
+            "s": "1 solid",
+          },
+        },
+        "colors": Object {
+          "button": Object {
+            "primary": Object {
+              "background": "#17384B",
+              "border": "#2C546C",
+              "color": "#FFFFFF",
+            },
+            "secondary": Object {
+              "background": "transparent",
+              "border": "#E9EEF2",
+              "color": "#D7DFE2",
+            },
+          },
+          "common": Object {
+            "black": "#000000",
+            "white": "#FFFFFF",
+          },
+          "error": Object {
+            "contrast": "#FFFFFF",
+            "fill": "#B31612",
+          },
+          "success": Object {
+            "contrast": "#FFFFFF",
+            "fill": "#00761D",
+          },
+          "warning": Object {
+            "contrast": "#FFFFFF",
+            "fill": "#E59600",
+          },
+        },
+        "typography": Object {
+          "family": "'Helvetica Neue', sans-serif",
+          "size": Object {
+            "l": 16,
+            "m": 12,
+            "s": 10,
+            "xl": 20,
+            "xs": 8,
+            "xxl": 24,
+            "xxxl": 34,
+            "xxxxl": 50,
+          },
+          "weight": Object {
+            "bold": 600,
+            "light": 100,
+            "regular": 300,
+          },
+        },
+      }
+    }
+  >
+    <Button
+      disabled={false}
+      mode="filled"
+      size="xs"
+      stretched={false}
+      type="error"
+    >
+      <ButtonCommon
+        disabled={false}
+        mode="filled"
+        size="xs"
+        stretched={false}
+        type="error"
+      >
+        <button
+          className="emotion-0 emotion-1"
+          disabled={false}
+          mode="filled"
+          size="xs"
+          type="error"
+        >
+          Test
+        </button>
+      </ButtonCommon>
+    </Button>
+  </ThemeProvider>
+</UXPinWrapper>
+`;
